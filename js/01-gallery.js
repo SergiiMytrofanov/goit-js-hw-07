@@ -13,7 +13,7 @@ const galleryItemsHTML = galleryItems.map(item =>
         alt="${item.description}"/>
     </a>
   </li>`).join('');
-  
+
 //  з використанням методу insertAdjacentHTML - прописуємо створену розмітку в HTML документ
 gallery.insertAdjacentHTML('beforeend', galleryItemsHTML);
 
@@ -34,8 +34,7 @@ function modal(evt) {
       if (escape.key === 'Escape') {
         modal.close();
   
-        window.removeEventListener('keydown', closeOnEscape);
-      }
+     }
     }
   
     window.addEventListener('keydown', closeOnEscape);
