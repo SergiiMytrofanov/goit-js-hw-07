@@ -18,6 +18,7 @@ const galleryLigthBoxitems = galleryItems.map((item) =>
 const lightbox = new SimpleLightbox('.gallery a', {
   overlayOpacity: 0.9,
   captionsData: 'alt',
+  captionDelay: 250,
   preloading: true,
   animationSpeed: 250,
   fadeSpeed: 300,
