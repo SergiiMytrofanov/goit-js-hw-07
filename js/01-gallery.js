@@ -15,7 +15,7 @@ const galleryItemsHTML = galleryItems.map(item =>
 
 gallery.insertAdjacentHTML('beforeend', galleryItemsHTML);
 
-function openModal(evt) {
+function modal(evt) {
   evt.preventDefault();
 
   if (evt.target.tagName !== 'IMG') {
@@ -27,7 +27,7 @@ function openModal(evt) {
   modal.show();
 }
 
-gallery.addEventListener('click', openModal);
+gallery.addEventListener('click', modal);
 
 
 
