@@ -2,6 +2,7 @@ import { galleryItems } from './gallery-items.js';
 // Change code below this line
 
 const gallery = document.querySelector('.gallery');
+
 // перебираємо масив галлері айтемс та створюємо список розмітки галереї зображень з використанням шаблонних рядків
 const galleryItemsHTML = galleryItems.map(item => 
     ` <li class="gallery__item">
@@ -12,6 +13,7 @@ const galleryItemsHTML = galleryItems.map(item =>
         alt="${item.description}"/>
     </a>
   </li>`).join('');
+  
 //  з використанням методу insertAdjacentHTML - прописуємо створену розмітку в HTML документ
 gallery.insertAdjacentHTML('beforeend', galleryItemsHTML);
 
